@@ -4,6 +4,11 @@ metadata:
   namespace: istio-system
   name: istio-default
 spec:
+  addonComponents:
+    prometheus:
+      enabled: false
+    prometheusOperator:
+      enabled: true
   profile: default
   components:
     pilot:
